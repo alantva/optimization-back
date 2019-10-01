@@ -4,8 +4,8 @@
   "main": "server.js",
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "dev": "webpack --config webpack.config.js --watch",
-    "start": "pm2 start ./dist/server.js --watch -f"
+    "dev": "pm2 start ./dist/server.js --watch -f && webpack --config webpack.config.js --watch",
+    "start": "node ./dist/server.js"
   },
   "license": "MIT",
   "dependencies": {
